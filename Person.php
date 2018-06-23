@@ -11,3 +11,5 @@ class Person
 }
 
 $john = new Person('John Doe');
+
+var_dump($john);

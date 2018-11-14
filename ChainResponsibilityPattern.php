@@ -73,3 +73,5 @@ $locks->succeedWith($lights);
 $lights->succeedWith($alarm);
 
 $locks->check(new HomeStatus);
+
+echo "if you can see this then the checking chain object is all true!";

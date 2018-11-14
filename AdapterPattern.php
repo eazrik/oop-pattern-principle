@@ -8,6 +8,7 @@ use Acme\Adapter\Kindle;
 use Acme\Adapter\Book;
 use Acme\Adapter\Nook;
 
+//usage
 class Person
 {
     public function read(BookInterface $book)

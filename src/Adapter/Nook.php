@@ -1,5 +1,5 @@
 <?php
-namespace Acme;
+namespace Acme\Adapter;
 
 class Nook implements eReaderInterface
 {

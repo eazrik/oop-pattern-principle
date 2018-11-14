@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme;
+namespace Acme\Adapter;
 
 class Book implements BookInterface
 {

@@ -59,6 +59,7 @@ class TireChange implements CarService
     }
 }
 
-$service = new TireChange(new OilChange(new BasicInspection()));
+$service = new OilChange(new TireChange(new BasicInspection));
 
+echo $service->getCost();
 echo $service->getDescription();

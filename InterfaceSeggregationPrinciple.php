@@ -28,7 +28,8 @@ class HumanWorker implements WorkableInterface, SleepableInterface, ManagableInt
     }
     public function beManaged()
     {
-        $this->work();
+        return
+        $this->work().
         $this->sleep();
     }
 }
@@ -41,7 +42,7 @@ class AndroidWorker implements WorkableInterface, ManagableInterface
     }
     public function beManaged()
     {
-        $this->work();
+        return $this->work();
     }
 }
 
@@ -50,10 +51,10 @@ class Captain
 {
     public function manage(ManagableInterface $worker)
     {
-        $worker->beManaged();
+        return $worker->beManaged();
     }
 }
 
-echo $test = (new Captain)->manage(new AndroidWorker);
-
-echo 'test';
+echo (new Captain)->manage(new AndroidWorker);
+echo '<pre>';
+echo (new Captain)->manage(new HumanWorker);

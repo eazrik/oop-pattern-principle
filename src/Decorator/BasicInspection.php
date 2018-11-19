@@ -4,7 +4,7 @@ class BasicInspection implements CarService
 {
     public function getCost()
     {
-        return 15;
+        return 25;
     }
     public function getDescription()
     {

@@ -1,9 +1,8 @@
 <?php
 
-interface ManagableInterface
-{
-    public function beManaged();
-}
+require 'vendor/autoload.php';
+
+use Acme\InterfaceSeggregation\ManagableInterface;
 
 interface WorkableInterface
 {

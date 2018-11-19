@@ -7,13 +7,12 @@
 
 //2. encapsulate each one and make then interchangeable = implements contract/interface
 
-interface Logger
-{
-    public function log($data);
-}
+require 'vendor/autoload.php';
+
+use Acme\Strategy\Logger;
 
 //1. define a family of algorithms
-class LogToFile implements logger
+class LogToFile implements Logger
 {
     public function log($data)
     {
@@ -21,7 +20,7 @@ class LogToFile implements logger
     }
 }
 
-class LogToDatabase implements logger
+class LogToDatabase implements Logger
 {
     public function log($data)
     {
@@ -29,7 +28,7 @@ class LogToDatabase implements logger
     }
 }
 
-class LogToXWebservice implements logger
+class LogToXWebservice implements Logger
 {
     public function log($data)
     {

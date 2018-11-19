@@ -6,57 +6,12 @@
 // if that the case then maybe you can refer to the decorator pattern
 require 'vendor/autoload.php';
 
-use Acme\Decorator\CarService;
-
-class BasicInspection implements CarService
-{
-    public function getCost()
-    {
-        return 15;
-    }
-    public function getDescription()
-    {
-        return 'Basic Inspection';
-    }
-}
-
-class OilChange implements CarService
-{
-    protected $carService;
-
-    public function __construct(CarService $carService)
-    {
-        $this->carService = $carService;
-    }
-    public function getCost()
-    {
-        return 25 + $this->carService->getCost();
-    }
-    public function getDescription()
-    {
-        return $this->carService->getDescription().' and Oil Change';
-    }
-}
-
-class TireChange implements CarService
-{
-    protected $carService;
-
-    public function __construct(CarService $carService)
-    {
-        $this->carService = $carService;
-    }
-    public function getCost()
-    {
-        return 10 + $this->carService->getCost();
-    }
-    public function getDescription()
-    {
-        return $this->carService->getDescription().' and Tire Change';
-    }
-}
+use Acme\Decorator\BasicInspection;
+use Acme\Decorator\OilChange;
+use Acme\Decorator\TireChange;
 
 $service = new OilChange(new TireChange(new BasicInspection));
 
 echo $service->getCost();
+echo '<br>';
 echo $service->getDescription();

@@ -4,12 +4,9 @@
 // just ask yourself, i inherit from that class, do i really need to pull in the entirety of that fnctionality?
 // or do i instead need to simply adjust the behaviour of one or two methods?
 // if that the case then maybe you can refer to the decorator pattern
-interface CarService
-{
-    public function getCost();
+require 'vendor/autoload.php';
 
-    public function getDescription();
-}
+use Acme\Decorator\CarService;
 
 class BasicInspection implements CarService
 {

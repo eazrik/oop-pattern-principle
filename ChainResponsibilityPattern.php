@@ -1,24 +1,11 @@
 <?php
 
 //this is chain of responsibility pattern
-abstract class HomeChecker
-{
-    protected $successor;
+require 'vendor/autoload.php';
 
-    abstract public function check(HomeStatus $home);
+use Acme\Chain\HomeChecker;
+use Acme\Chain\HomeStatus;
 
-    public function succeedWith(HomeChecker $successor)
-    {
-        $this->successor = $successor;
-    }
-
-    public function next(HomeStatus $home)
-    {
-        if ($this->successor) {
-            $this->successor->check($home);
-        }
-    }
-}
 class Locks extends HomeChecker
 {
     public function check(HomeStatus $home)
@@ -57,13 +44,7 @@ class Alarm extends HomeChecker
 
 //..down here will be the entry point eg:index.php, client, controller
 
-//here would presumabably from a form, database resultset etc
-class HomeStatus
-{
-    public $alarmOn = true;
-    public $locked = true;
-    public $lightsOff = true;
-}
+
 
 $locks = new Locks;
 $lights = new Lights;

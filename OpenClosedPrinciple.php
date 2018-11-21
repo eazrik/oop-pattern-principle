@@ -8,9 +8,9 @@
 
 require 'vendor/autoload.php';
 
-use Acme\OpenClosed\AreaCalculator;
-use Acme\OpenClosed\Circle;
-use Acme\OpenClosed\Square;
+use Acme\Principle\OpenClosed\AreaCalculator;
+use Acme\Principle\OpenClosed\Circle;
+use Acme\Principle\OpenClosed\Square;
 
 $shapes = [
     new Circle('12'),

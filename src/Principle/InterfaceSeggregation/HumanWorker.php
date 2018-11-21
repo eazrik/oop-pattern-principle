@@ -1,4 +1,4 @@
-<?php namespace Acme\InterfaceSeggregation;
+<?php namespace Acme\Principle\InterfaceSeggregation;
 
 class HumanWorker implements WorkableInterface, SleepableInterface, ManagableInterface
 {

@@ -1,4 +1,4 @@
-<?php namespace Acme\Chain;
+<?php namespace Acme\Pattern\Chain;
 
 //here would presumabably from a form, database resultset etc
 class HomeStatus

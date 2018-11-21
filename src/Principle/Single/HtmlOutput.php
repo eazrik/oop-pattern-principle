@@ -1,4 +1,4 @@
-<?php namespace Acme\Single;
+<?php namespace Acme\Principle\Single;
 
 class HtmlOutput implements SalesOutputInterface
 {

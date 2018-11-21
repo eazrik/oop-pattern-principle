@@ -1,4 +1,4 @@
-<?php namespace Acme\Chain;
+<?php namespace Acme\Pattern\Chain;
 
 class Locks extends HomeChecker
 {

@@ -1,4 +1,4 @@
-<?php namespace Acme\Single\Repository;
+<?php namespace Acme\Principle\Single\Repository;
 
 class SalesRepository
 {

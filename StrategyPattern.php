@@ -9,7 +9,7 @@
 
 require 'vendor/autoload.php';
 
-use Acme\Strategy\Logger;
+use Acme\Pattern\Strategy\Logger;
 
 //1. define a family of algorithms
 class LogToFile implements Logger

@@ -6,9 +6,9 @@
 // if that the case then maybe you can refer to the decorator pattern
 require 'vendor/autoload.php';
 
-use Acme\Decorator\BasicInspection;
-use Acme\Decorator\OilChange;
-use Acme\Decorator\TireChange;
+use Acme\Pattern\Decorator\BasicInspection;
+use Acme\Pattern\Decorator\OilChange;
+use Acme\Pattern\Decorator\TireChange;
 
 $service = new OilChange(new TireChange(new BasicInspection));
 

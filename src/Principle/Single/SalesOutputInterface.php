@@ -1,4 +1,4 @@
-<?php namespace Acme\Single;
+<?php namespace Acme\Principle\Single;
 
 interface SalesOutputInterface
 {

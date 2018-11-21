@@ -1,6 +1,6 @@
-<?php namespace Acme\Single;
+<?php namespace Acme\Principle\Single;
 
-use Acme\Single\Repository\SalesRepository;
+use Acme\Principle\Single\Repository\SalesRepository;
 
 //this is the refactored - single responsibility
 class SalesReporter

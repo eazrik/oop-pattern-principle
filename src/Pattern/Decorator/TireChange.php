@@ -1,4 +1,4 @@
-<?php namespace Acme\Decorator;
+<?php namespace Acme\Pattern\Decorator;
 
 class TireChange implements CarService
 {

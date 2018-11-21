@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\Template;
+namespace Acme\Pattern\Template;
 
 class TurkeySub extends Sub
 {

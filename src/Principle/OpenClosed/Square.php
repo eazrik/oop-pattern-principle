@@ -1,4 +1,4 @@
-<?php namespace Acme\OpenClosed;
+<?php namespace Acme\Principle\OpenClosed;
 
 class Square implements ShapeInterface
 {

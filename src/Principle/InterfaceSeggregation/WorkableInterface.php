@@ -1,4 +1,4 @@
-<?php namespace Acme\InterfaceSeggregation;
+<?php namespace Acme\Principle\InterfaceSeggregation;
 
 interface WorkableInterface
 {

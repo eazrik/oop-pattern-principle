@@ -1,4 +1,4 @@
-<?php namespace Acme\Strategy;
+<?php namespace Acme\Pattern\Strategy;
 
 interface Logger
 {

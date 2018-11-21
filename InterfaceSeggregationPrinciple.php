@@ -2,9 +2,9 @@
 
 require 'vendor/autoload.php';
 
-use Acme\InterfaceSeggregation\ManagableInterface;
-use Acme\InterfaceSeggregation\HumanWorker;
-use Acme\InterfaceSeggregation\AndroidWorker;
+use Acme\Principle\InterfaceSeggregation\ManagableInterface;
+use Acme\Principle\InterfaceSeggregation\HumanWorker;
+use Acme\Principle\InterfaceSeggregation\AndroidWorker;
 
 //usage
 class Captain

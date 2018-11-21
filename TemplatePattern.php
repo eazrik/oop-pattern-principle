@@ -5,8 +5,8 @@
 //share common function in master class and do template pattern for any differences
 require 'vendor/autoload.php';
 
-use Acme\Template\TurkeySub;
-use Acme\Template\VeggieSub;
+use Acme\Pattern\Template\TurkeySub;
+use Acme\Pattern\Template\VeggieSub;
 
 (new TurkeySub)->make();
 echo '<br>';

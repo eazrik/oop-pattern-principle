@@ -2,11 +2,11 @@
 //this is adapter pattern
 require 'vendor/autoload.php';
 
-use Acme\Adapter\BookInterface;
-use Acme\Adapter\eReaderAdapter;
-use Acme\Adapter\Kindle;
-use Acme\Adapter\Book;
-use Acme\Adapter\Nook;
+use Acme\Pattern\Adapter\BookInterface;
+use Acme\Pattern\Adapter\eReaderAdapter;
+use Acme\Pattern\Adapter\Kindle;
+use Acme\Pattern\Adapter\Book;
+use Acme\Pattern\Adapter\Nook;
 
 //usage
 class Person

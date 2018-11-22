@@ -10,15 +10,7 @@
 require 'vendor/autoload.php';
 
 use Acme\Pattern\Strategy\Logger;
-
-//1. define a family of algorithms
-class LogToFile implements Logger
-{
-    public function log($data)
-    {
-        var_dump('Log the data to a file');
-    }
-}
+use Acme\Pattern\Strategy\LogToFile;
 
 class LogToDatabase implements Logger
 {

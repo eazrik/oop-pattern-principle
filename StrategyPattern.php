@@ -11,14 +11,7 @@ require 'vendor/autoload.php';
 
 use Acme\Pattern\Strategy\Logger;
 use Acme\Pattern\Strategy\LogToFile;
-
-class LogToDatabase implements Logger
-{
-    public function log($data)
-    {
-        var_dump('Log the data to the database');
-    }
-}
+use Acme\Pattern\Strategy\LogToDatabase;
 
 class LogToXWebservice implements Logger
 {

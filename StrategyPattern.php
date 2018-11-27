@@ -12,14 +12,7 @@ require 'vendor/autoload.php';
 use Acme\Pattern\Strategy\Logger;
 use Acme\Pattern\Strategy\LogToFile;
 use Acme\Pattern\Strategy\LogToDatabase;
-
-class LogToXWebservice implements Logger
-{
-    public function log($data)
-    {
-        var_dump('Log the data to a Sass site.');
-    }
-}
+use Acme\Pattern\Strategy\LogToXWebservice;
 
 //usage
 //and ultimately by leveraging polymorphism we'are able to build loosely coupled application

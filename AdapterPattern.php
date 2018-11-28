@@ -18,5 +18,7 @@ class Person
     }
 }
 (new Person)->read(new Book);
+echo '<br>';
 (new Person)->read(new eReaderAdapter(new Kindle));
+echo '<br>';
 (new Person)->read(new eReaderAdapter(new Nook));

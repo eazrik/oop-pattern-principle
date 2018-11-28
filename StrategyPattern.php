@@ -9,21 +9,13 @@
 
 require 'vendor/autoload.php';
 
-use Acme\Pattern\Strategy\Logger;
-use Acme\Pattern\Strategy\LogToFile;
 use Acme\Pattern\Strategy\LogToDatabase;
 use Acme\Pattern\Strategy\LogToXWebservice;
+use Acme\Pattern\Strategy\App;
 
 //usage
 //and ultimately by leveraging polymorphism we'are able to build loosely coupled application
-class App
-{
-    public function log($data, Logger $logger = null)
-    {
-        $logger = $logger ? : new LogToFile;
-        $logger->log($data);
-    }
-}
+
 
 $app = new App;
 

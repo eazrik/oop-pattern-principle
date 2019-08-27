@@ -5,7 +5,7 @@ class LogToDatabase implements Logger
     /**
      * A method
      *
-     * @param string $data Data
+     * @param string $data Datas
      *
      * @return void
      */

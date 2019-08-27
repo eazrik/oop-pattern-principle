@@ -2,5 +2,8 @@
 
 interface ManagableInterface
 {
+    /**
+     * a method
+     */
     public function beManaged();
 }

@@ -3,5 +3,15 @@
         "psr-4" : {
             "Acme\\" : "src"
         }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "check": [
+            "@cs-check"
+        ],
+        "cs-check": "php vendor/bin/phpcs  --colors -p --standard=custom_ruleset.xml ./src",
+        "cs-fix": "php  vendor/bin/phpcbf --colors --standard=custom_ruleset.xml ./src"
     }
 }

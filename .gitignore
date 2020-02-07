@@ -1,2 +1,4 @@
 /vendor/*
 .DS_Store
+.idea/
+oop-pattern-principle.iml

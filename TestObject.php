@@ -15,9 +15,18 @@ class TestObject {
     {
         return $this->age;
     }
+
+    public function checkEligibility()
+    {
+        if ($this->age <= 14) {
+            return var_dump("You are not eligible to vote");
+        }
+        return var_dump("You are eligible to vote");
+    }
 }
 
 $test = new TestObject;
 
-//$test->setAge(80);
-var_dump($test->getAge());
+$test->setAge(25);
+
+var_dump($test->checkEligibility());

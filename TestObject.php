@@ -19,5 +19,5 @@ class TestObject {
 
 $test = new TestObject;
 
-$test->setAge(80);
+//$test->setAge(80);
 var_dump($test->getAge());

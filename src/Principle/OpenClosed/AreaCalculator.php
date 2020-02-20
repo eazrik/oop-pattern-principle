@@ -2,6 +2,13 @@
 
 class AreaCalculator
 {
+    /**
+     * Method calculate
+     *
+     * @param $shapes Shapes
+     *
+     * @return mixed
+     */
     public function calculate($shapes)
     {
         foreach ($shapes as $shape) {

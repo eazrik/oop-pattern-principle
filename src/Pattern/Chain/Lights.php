@@ -2,6 +2,13 @@
 
 class Lights extends HomeChecker
 {
+    /**
+     * Method check
+     *
+     * @param $home Home
+     *
+     * @return mixed
+     */
     public function check(HomeStatus $home)
     {
         if (! $home->lightsOff()) {

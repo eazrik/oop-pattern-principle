@@ -2,6 +2,13 @@
 
 class HtmlOutput implements SalesOutputInterface
 {
+    /**
+     * Method output
+     *
+     * @param $sales Data
+     *
+     * @return mixed
+     */
     public function output($sales)
     {
         return "<h1>Sales:$sales</h1>";

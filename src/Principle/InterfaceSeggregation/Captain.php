@@ -6,6 +6,8 @@ class Captain
     /**
      * Method manage
      *
+     * @param $worker Data
+     *
      * @return string
      */
     public function manage(ManagableInterface $worker)

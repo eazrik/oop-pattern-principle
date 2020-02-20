@@ -2,6 +2,13 @@
 
 class Person
 {
+    /**
+     * Method read
+     *
+     * @param $book Book
+     *
+     * @return void
+     */
     public function read(BookInterface $book)
     {
         $book->open();

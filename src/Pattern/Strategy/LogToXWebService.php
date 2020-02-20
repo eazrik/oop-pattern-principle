@@ -1,4 +1,5 @@
-<?php namespace Acme\Pattern\Strategy;
+<?php
+namespace Acme\Pattern\Strategy;
 
 class LogToXWebservice implements Logger
 {

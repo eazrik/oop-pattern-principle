@@ -5,7 +5,7 @@ class HtmlOutput implements SalesOutputInterface
     /**
      * Method output
      *
-     * @param $sales Data
+     * @param string $sales Data
      *
      * @return mixed
      */

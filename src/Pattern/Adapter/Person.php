@@ -5,7 +5,7 @@ class Person
     /**
      * Method read
      *
-     * @param $book Book
+     * @param BookInterface $book Book
      *
      * @return void
      */

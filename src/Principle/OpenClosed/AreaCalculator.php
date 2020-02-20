@@ -5,12 +5,14 @@ class AreaCalculator
     /**
      * Method calculate
      *
-     * @param $shapes Shapes
+     * @param string $shapes Shapes
      *
      * @return mixed
      */
     public function calculate($shapes)
     {
+        $area = [];
+
         foreach ($shapes as $shape) {
             $area[] = $shape->area();
         }

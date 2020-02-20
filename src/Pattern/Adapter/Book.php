@@ -7,7 +7,7 @@ class Book implements BookInterface
     /**
      * Method open
      *
-     * @return string
+     * @return void
      */
     public function open()
     {
@@ -17,7 +17,7 @@ class Book implements BookInterface
     /**
      * Method turnPage
      *
-     * @return string
+     * @return void
      */
     public function turnPage()
     {

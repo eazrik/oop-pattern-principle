@@ -5,7 +5,7 @@ interface Logger
     /**
      * Method log
      *
-     * @param $data Data
+     * @param string $data Data
      *
      * @return string
      */

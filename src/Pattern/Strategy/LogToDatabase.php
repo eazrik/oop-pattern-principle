@@ -5,9 +5,9 @@ class LogToDatabase implements Logger
     /**
      * Method log
      *
-     * @param $data Data
+     * @param string $data Data
      *
-     * @return string
+     * @return void
      */
     public function log($data)
     {

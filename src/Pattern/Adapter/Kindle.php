@@ -1,12 +1,12 @@
 <?php
 namespace Acme\Pattern\Adapter;
 
-class Kindle implements eReaderInterface
+class Kindle implements ElectronicReaderInterface
 {
     /**
      * Method turnOn
      *
-     * @return string
+     * @return void
      */
     public function turnOn()
     {
@@ -16,7 +16,7 @@ class Kindle implements eReaderInterface
     /**
      * Method turnOn
      *
-     * @return string
+     * @return void
      */
     public function pressNextButton()
     {

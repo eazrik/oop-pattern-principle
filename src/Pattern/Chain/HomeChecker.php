@@ -7,7 +7,7 @@ abstract class HomeChecker
     /**
      * Abstract Method check
      *
-     * @param $home Home
+     * @param HomeStatus $home Home
      *
      * @return mixed
      */
@@ -16,7 +16,7 @@ abstract class HomeChecker
     /**
      * Method check
      *
-     * @param $successor Successor
+     * @param HomeChecker $successor Successor
      *
      * @return mixed
      */
@@ -28,7 +28,7 @@ abstract class HomeChecker
     /**
      * Method check
      *
-     * @param $home Home
+     * @param HomeStatus $home Home
      *
      * @return mixed
      */

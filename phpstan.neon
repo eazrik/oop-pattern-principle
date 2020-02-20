@@ -20,3 +20,4 @@ parameters:
         - '#Call to static method customizeCodeceptionBinary\(\) on an unknown class Cake\\Codeception\\Console\\Installer#'
 
     reportUnmatchedIgnoredErrors: false
+    inferPrivatePropertyTypeFromConstructor: true

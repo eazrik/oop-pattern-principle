@@ -10,7 +10,7 @@ interface ManagableInterface
     /**
      * Method beManaged
      *
-     * @return void
+     * @return mixed
      */
     public function beManaged();
 }

@@ -7,7 +7,7 @@ class Circle implements ShapeInterface
     /**
      * Method initialize
      *
-     * @param $radius Radius
+     * @param string $radius Radius
      *
      * @return mixed
      */

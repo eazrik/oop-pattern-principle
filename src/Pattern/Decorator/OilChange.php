@@ -7,7 +7,7 @@ class OilChange implements CarService
     /**
      * Method initialize
      *
-     * @param $carService Car
+     * @param CarService $carService Car
      *
      * @return mixed
      */

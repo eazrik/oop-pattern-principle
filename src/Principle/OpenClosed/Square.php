@@ -8,8 +8,8 @@ class Square implements ShapeInterface
     /**
      * Method initialize
      *
-     * @param $width Data
-     * @param $height Data
+     * @param string $width Data
+     * @param string $height Data
      *
      * @return mixed
      */

@@ -1,12 +1,12 @@
 <?php
 namespace Acme\Pattern\Adapter;
 
-class Nook implements eReaderInterface
+class Nook implements ElectronicReaderInterface
 {
     /**
      * Method turnOn
      *
-     * @return string
+     * @return void
      */
     public function turnOn()
     {
@@ -16,7 +16,7 @@ class Nook implements eReaderInterface
     /**
      * Method pressNextButton
      *
-     * @return string
+     * @return void
      */
     public function pressNextButton()
     {

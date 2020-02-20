@@ -6,9 +6,9 @@ class Captain
     /**
      * Method manage
      *
-     * @param $worker Data
+     * @param ManagableInterface $worker Data
      *
-     * @return string
+     * @return mixed|void
      */
     public function manage(ManagableInterface $worker)
     {

@@ -5,8 +5,8 @@ class SalesRepository
     /**
      * Method between
      *
-     * @param $startDate Data
-     * @param $endDate Data
+     * @param string $startDate Data
+     * @param string $endDate Data
      *
      * @return mixed
      */

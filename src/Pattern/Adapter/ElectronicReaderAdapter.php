@@ -11,11 +11,9 @@ class ElectronicReaderAdapter implements BookInterface
     /**
      * Method initialize
      *
-     * @param $reader Reader
-     *
-     * @return string
+     * @param ElectronicReaderInterface $reader Reader
      */
-    public function __construct(eReaderInterface $reader)
+    public function __construct(ElectronicReaderInterface $reader)
     {
         $this->reader = $reader;
     }
@@ -23,7 +21,7 @@ class ElectronicReaderAdapter implements BookInterface
     /**
      * Method open
      *
-     * @return string
+     * @return void
      */
     public function open()
     {
@@ -33,7 +31,7 @@ class ElectronicReaderAdapter implements BookInterface
     /**
      * Method turnPage
      *
-     * @return string
+     * @return void
      */
     public function turnPage()
     {

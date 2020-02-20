@@ -5,10 +5,10 @@ class App
     /**
      * Method log
      *
-     * @param $data Data
-     * @param $logger Logger
+     * @param string $data Data
+     * @param Logger $logger Logger
      *
-     * @return string
+     * @return void
      */
     public function log($data, Logger $logger = null)
     {

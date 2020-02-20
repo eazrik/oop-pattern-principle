@@ -5,7 +5,7 @@ class Lights extends HomeChecker
     /**
      * Method check
      *
-     * @param $home Home
+     * @param HomeStatus $home Home
      *
      * @return mixed
      */

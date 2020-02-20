@@ -13,7 +13,7 @@ class SalesReporter
     /**
      * Method initialize
      *
-     * @param $repo Repo
+     * @param SalesRepository $repo Repo
      *
      * @return mixed
      */
@@ -25,9 +25,9 @@ class SalesReporter
     /**
      * Method between
      *
-     * @param $startDate Data
-     * @param $endDate Data
-     * @param $formatter Data
+     * @param string $startDate Data
+     * @param string $endDate Data
+     * @param SalesOutputInterface $formatter Data
      *
      * @return mixed
      */

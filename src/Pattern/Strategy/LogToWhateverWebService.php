@@ -1,7 +1,7 @@
 <?php
 namespace Acme\Pattern\Strategy;
 
-class LogToXWebservice implements Logger
+class LogToWhateverWebservice implements Logger
 {
     /**
      * Method log

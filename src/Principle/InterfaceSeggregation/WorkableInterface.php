@@ -2,5 +2,10 @@
 
 interface WorkableInterface
 {
+    /**
+     * Method work
+     *
+     * @return string
+     */
     public function work();
 }

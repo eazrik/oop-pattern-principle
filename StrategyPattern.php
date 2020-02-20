@@ -10,7 +10,7 @@
 require 'vendor/autoload.php';
 
 use Acme\Pattern\Strategy\LogToDatabase;
-use Acme\Pattern\Strategy\LogToXWebservice;
+// use Acme\Pattern\Strategy\LogToXWebservice;
 use Acme\Pattern\Strategy\App;
 
 //usage
@@ -22,5 +22,5 @@ $app = new App;
 $app->log('Some information here');
 echo '<br>';
 $app->log('Some information here', new LogToDatabase);
-echo '<br>';
-$app->log('Some information here', new LogToXWebservice);
+// echo '<br>';
+// $app->log('Some information here', new LogToXWebservice);

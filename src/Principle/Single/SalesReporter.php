@@ -5,12 +5,32 @@ use Acme\Principle\Single\Repository\SalesRepository;
 //this is the refactored - single responsibility
 class SalesReporter
 {
+    /**
+     * Property $repo Repo
+     */
     private $repo;
 
+    /**
+     * Method initialize
+     *
+     * @param SalesRepository $repo Repo
+     *
+     * @return mixed
+     */
     public function __construct(SalesRepository $repo)
     {
         $this->repo = $repo;
     }
+
+    /**
+     * Method between
+     *
+     * @param string $startDate Data
+     * @param string $endDate Data
+     * @param SalesOutputInterface $formatter Data
+     *
+     * @return mixed
+     */
     public function between($startDate, $endDate, SalesOutputInterface $formatter)
     {
         $sales = $this->repo->between($startDate, $endDate);
@@ -26,7 +46,8 @@ class SalesReporter
 // {
 //     public function between($startDate, $endDate)
 //     {
-//         //perform authentication  -- should remove all from this class cause it is not responsible for checking authentication
+//         //perform authentication  -- should remove all
+// from this class cause it is not responsible for checking authentication
 //         // if (! Auth::check()) {
 //         //     throw new exception('authentication is required');
 //         // }

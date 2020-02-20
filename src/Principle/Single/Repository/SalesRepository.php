@@ -2,6 +2,14 @@
 
 class SalesRepository
 {
+    /**
+     * Method between
+     *
+     * @param string $startDate Data
+     * @param string $endDate Data
+     *
+     * @return mixed
+     */
     public function between($startDate, $endDate)
     {
         return '45';

@@ -2,6 +2,13 @@
 
 class Alarm extends HomeChecker
 {
+    /**
+     * Method check
+     *
+     * @param HomeStatus $home Home
+     *
+     * @return mixed
+     */
     public function check(HomeStatus $home)
     {
         if (! $home->alarmOn()) {

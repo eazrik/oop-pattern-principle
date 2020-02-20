@@ -7,6 +7,11 @@ class HomeStatus
     public $locked = true;
     public $lightsOff = true;
 
+    /**
+     * Method alarmOn
+     *
+     * @return mixed
+     */
     public function alarmOn()
     {
         // here call query class per method. return true if error code 0000 else return false
@@ -14,6 +19,11 @@ class HomeStatus
         return true;
     }
 
+    /**
+     * Method locked
+     *
+     * @return mixed
+     */
     public function locked()
     {
         // here call query class per method. return true if error code 0000 else return false
@@ -21,6 +31,11 @@ class HomeStatus
         return true;
     }
 
+    /**
+     * Method lightsOff
+     *
+     * @return mixed
+     */
     public function lightsOff()
     {
         // here call query class per method. return true if error code 0000 else return false

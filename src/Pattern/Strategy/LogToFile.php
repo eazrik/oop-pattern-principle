@@ -1,4 +1,5 @@
-<?php namespace Acme\Pattern\Strategy;
+<?php
+namespace Acme\Pattern\Strategy;
 
 //1. define a family of algorithms
 

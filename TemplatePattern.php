@@ -1,6 +1,6 @@
 <?php
 
-//This is template method pattern
+//This is template method pattern here
 //to cater code duplication between class
 //share common function in master class and do template pattern for any differences
 require 'vendor/autoload.php';

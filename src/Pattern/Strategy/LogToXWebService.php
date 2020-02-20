@@ -5,7 +5,7 @@ class LogToXWebservice implements Logger
     /**
      * Method log
      *
-     * @param string $data Data
+     * @param string $data Data TEst
      *
      * @return void
      */
